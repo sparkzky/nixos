@@ -113,7 +113,9 @@
 
     libreoffice-qt
     wireshark
-    qbittorrent
+    qbittorrent-enhanced
+    wpsoffice
+    wemeet
 
     code-cursor
 
@@ -121,6 +123,7 @@
 
     (rust-bin.nightly.latest.default.override { extensions = [ "rust-src" ]; })
     llvmPackages_latest.libcxxClang
+    cargo-generate
 
     # r3playx.packages."${pkgs.system}".r3playx
 
@@ -135,6 +138,13 @@
     zerotierone
 
     kdePackages.kcalc
+    clash-verge-rev
+
+    wasm-pack
+    nodejs_24
+
+    rar
+    obsidian
   ];
 
   # git 相关配置
