@@ -111,11 +111,9 @@
     unstable.warp-terminal
     bilibili
 
-    libreoffice-qt
     wireshark
-    qbittorrent-enhanced
+    qbittorrent
     wpsoffice
-    wemeet
 
     code-cursor
 
@@ -145,6 +143,17 @@
 
     rar
     obsidian
+
+    obs-studio
+
+    zotero
+
+    godot
+
+    mpv
+    
+    microsoft-edge
+    chatbox
   ];
 
   # git 相关配置

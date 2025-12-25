@@ -149,7 +149,13 @@
   #  wget
   ];
 
-  environment.variables.EDITOR = "vim";
+  # environment.variables.EDITOR = "vim";
+  environment.variables = {
+    EDITOR = "vim";
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+  };
 
   fonts.packages = with pkgs; [
     source-han-sans
@@ -216,7 +222,7 @@
     shellAliases = {
       ll = "ls -l";
       edit = "sudo -e";
-      update = "sudo nixos-rebuild switch --flake /home/sparkzky/nixos#nixos";
+      update = "sudo nix flake update && sudo nixos-rebuild switch --flake /home/sparkzky/nixos#nixos";
     };
 
     histSize = 10000;
